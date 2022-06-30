@@ -1,10 +1,10 @@
 <!DOCTYPE html>
+{% import "bootstrap/wtf.html" as wtf %}
 <html>
 <body>
 
-<h1>My First Heading</h1>
-
-<p>My first paragraph.</p>
+    {{ form.hidden_tag() }}
+    <h3>{{ wtf.form_field(form.username) }}</h3>
 
 </body>
 </html>
