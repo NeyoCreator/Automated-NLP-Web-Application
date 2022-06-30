@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-{% import "bootstrap/wtf.html" as wtf %}
 <html>
+<head>
+<title>Page Title</title>
+</head>
 <body>
 
-    {{ form.hidden_tag() }}
-    <h3>{{ wtf.form_field(form.username) }}</h3>
+<h1>Identify The Language</h1>
 
+<form action="{{ url_for('home')}}" method="post">
+    <label for="firstname">Enter Language:</label>
+    <textarea id="firstname" name="fname" rows="4" cols="50"></textarea>
+
+    <button type="submit">Check</button>
+
+    
 </body>
 </html>
