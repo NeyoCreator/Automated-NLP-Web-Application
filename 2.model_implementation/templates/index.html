@@ -1,18 +1,41 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
+{% extends "bootstrap/base.html" %}
 
-<h1>Identify The Language</h1>
+{% block title %}
+Demo App
+{% endblock %}
 
-<form action="{{ url_for('home')}}" method="post">
-    <label for="firstname">Enter Language:</label>
-    <textarea id="firstname" name="fname" rows="4" cols="50"></textarea>
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="{{url_for('.static', filename='starter-template.css')}}">
+<link href='https://fonts.googleapis.com/css?family=Antic' rel='stylesheet'>
+{% endblock %}
 
-    <button type="submit">Check</button>
+{% block content %}
 
-    
-</body>
-</html>
+
+      <div class="starter-template">
+        <h1><strong>Identify The Language</strong></h1>
+        <p class="space_three"></p>
+        <form action="{{ url_for('home')}}" method="post">
+            
+          <label for="firstname">Enter Language:</label>
+            <textarea class="white_back" id="firstname" name="fname" rows="2" cols="20"></textarea>
+            <p class="space_two"></p>
+            <button class="wide_orange_button" type="submit">Check</button>
+            <p class="space_two"></p>
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+              {% for message in messages %}
+              <div class="alert alert-success alert-dismissable" role="alert">
+                {{message}}
+              </div>
+              {% endfor %}
+            {% endif %}
+          {% endwith %}
+          </div>
+
+
+
+{% endblock %}
+
+

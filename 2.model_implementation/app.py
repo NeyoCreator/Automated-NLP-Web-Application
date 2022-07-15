@@ -36,17 +36,17 @@ def home():
         if result == 'zul':
             result = 'Zulu'
 
-        if result == "tso":
+        if result == "tsn":
             result = 'Tsonga'  
 
         if result == "sot":
             result = 'Sotho'
 
-        
+        if result == "ven":
+            result = 'Venda'
 
-        
-
-       return "Your name is " + result
+        flash(f'Identified language is {result}')
+       #return "Your name is " + result
     return render_template("index.html")
 if __name__ == '__main__':
     app.run(debug=True)
