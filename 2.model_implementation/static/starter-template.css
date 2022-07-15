@@ -14,13 +14,6 @@
   margin-bottom: 5mm;
 }
 
-.graydot {
-  height: 15px;
-  width: 15px;
-  background-color: #AFB0B1;
-  border-radius: 50%;
-  display: inline-block;
-}
 
 body {
   padding-top: 0px;
@@ -33,25 +26,11 @@ body {
 }
 
 
-.button {
-  background-color: #E4D2A2;
-  border: none;
-  color: #EDAD00;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 16px;
-}
 
-
-
-.wide_orange_button{
-  background-color: #E4D2A2;
+.green_button{
+  background-color: #008B8B;
   border: none; 
-  color: #EDAD00;
+  color: #ffffff;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -59,27 +38,16 @@ body {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 16px;
-  width: 350px;
+  width: 430px;
 }
-.wide_blue_button{
-  background-color: #8DADE8;
-  border: none; 
-  color: #266EF1;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 16px;
-  width: 350px;
-}
+
 
 
 .white_back{
   background-color: #ffffff;
   border: none; 
   color: #0a0a0a;
+  box-shadow: #56585a;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -87,5 +55,6 @@ body {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 16px;
-  width: 350px;
+  width: 430px;
+  outline-color: #ffffff;
 }

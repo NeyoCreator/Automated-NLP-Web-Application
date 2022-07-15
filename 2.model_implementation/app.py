@@ -45,6 +45,9 @@ def home():
         if result == "ven":
             result = 'Venda'
 
+        if result == "nso":
+            result = 'Sotho'
+        
         flash(f'Identified language is {result}')
        #return "Your name is " + result
     return render_template("index.html")

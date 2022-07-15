@@ -14,26 +14,24 @@ Demo App
 
 
       <div class="starter-template">
-        <h1><strong>Identify The Language</strong></h1>
-        <p class="space_three"></p>
-        <form action="{{ url_for('home')}}" method="post">
-            
-          <label for="firstname">Enter Language:</label>
-            <textarea class="white_back" id="firstname" name="fname" rows="2" cols="20"></textarea>
+        
+        <form action="{{ url_for('home')}}" method="post"> 
+          <label for="firstname"><strong>Enter Language:</strong></label>
+            <textarea class="white_back" id="firstname" name="fname" rows="2" cols="50"></textarea>
+            <button class="green_button" type="submit"><strong>Check</strong></button>
             <p class="space_two"></p>
-            <button class="wide_orange_button" type="submit">Check</button>
-            <p class="space_two"></p>
+            <center>
             {% with messages = get_flashed_messages() %}
             {% if messages %}
               {% for message in messages %}
               <div class="alert alert-success alert-dismissable" role="alert">
-                {{message}}
+                <strong>{{message}}</strong>
               </div>
               {% endfor %}
             {% endif %}
           {% endwith %}
+        </center>
           </div>
-
 
 
 {% endblock %}
