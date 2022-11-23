@@ -18,7 +18,7 @@ This consist of the python script where we train the
 model with dataset of different languages.After that 
 we tested the model on unseen data.
 
-## __2.Note Book__
+## __2.Model Implemantation__
 After the whole training process we test the model with 
 as a console application. where the user inserts texts 
 and then it identifies what language it is.
